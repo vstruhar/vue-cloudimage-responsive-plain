@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import { isServer, processReactNode, generateAlt } from "cloudimage-responsive-utils";
+import { isServer, processReactNode } from "cloudimage-responsive-utils";
 
 export default {
   // geting the data from the provider
@@ -48,7 +48,7 @@ export default {
         ratio: this.ratio,
         lazyLoading: this.lazyLoading,
         lazyLoadConfig: this.lazyLoadConfig,
-        alt: this.alt || generateAlt(this.src),
+        alt: this.alt,
         className: this.className,
         config: this.cloudProvider.config,
         onImgLoad: this.onImgLoad,
