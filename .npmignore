@@ -1,5 +1,4 @@
 # .npmignore
-src
 examples
 .babelrc
 .gitignore
